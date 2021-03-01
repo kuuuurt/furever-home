@@ -30,7 +30,7 @@ private val QuicksandRegular = FontFamily(
 // Set of Material typography styles to start with
 val Typography = Typography(
     h1 = TextStyle(
-            fontFamily = QuicksandRegular,
+        fontFamily = QuicksandRegular,
         fontWeight = FontWeight.Bold,
         fontSize = 96.sp
     ),

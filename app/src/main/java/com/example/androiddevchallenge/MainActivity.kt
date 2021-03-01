@@ -84,9 +84,11 @@ fun CatsHome() {
         Box(modifier = Modifier.padding(it)) {
             NavHost(navController, startDestination = Destinations.Cats.route) {
                 composable(Destinations.Cats.route) {
-                    CatsScreen(onCatItemClick = { cat ->
-                        navController.navigate(Destinations.CatDetails.withName(cat.name))
-                    })
+                    CatsScreen(
+                        onCatItemClick = { cat ->
+                            navController.navigate(Destinations.CatDetails.withName(cat.name))
+                        }
+                    )
                 }
                 composable(Destinations.CatDetails.route) { backStackNavEntry ->
                     val catName = backStackNavEntry.arguments?.getString("catName")
