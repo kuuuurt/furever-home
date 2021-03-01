@@ -88,6 +88,7 @@ fun CatItem(cat: Cat, onCatItemClick: (Cat) -> Unit) {
                                 Gender.MALE -> "♂"
                                 Gender.FEMALE -> "♀"
                             },
+                            style = MaterialTheme.typography.h6,
                             modifier = Modifier.padding(horizontal = 8.dp)
                         )
                     }
