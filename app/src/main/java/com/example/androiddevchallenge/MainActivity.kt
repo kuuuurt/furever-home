@@ -44,7 +44,9 @@ class MainActivity : AppCompatActivity() {
                     }
                 ) {
                     Box(modifier = Modifier.padding(it)) {
-                        CatsScreen()
+                        CatsScreen {
+
+                        }
                     }
                 }
             }
